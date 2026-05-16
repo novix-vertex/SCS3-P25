@@ -19,7 +19,7 @@ header {
     align-items: center;
 
     height: 3.8rem;
-    padding: 2.8rem 3.5rem;
+    padding: 1.5rem 2.5rem;
     background: #fff;
 }
 
@@ -47,6 +47,7 @@ header .header-left nav {
 header .header-left nav a {
     text-decoration: none;
     color: #000;
+    font-size: 1rem;
 }
 
 header .header-right {
