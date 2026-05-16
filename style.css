@@ -72,3 +72,30 @@ main {
     background: #fff;
     padding: 0.2rem 1rem;
 }
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #767676;
+}
+
+footer h5 {
+    height: 4rem;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+}
