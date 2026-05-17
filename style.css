@@ -91,18 +91,13 @@ main {
     overflow: hidden;
 }
 
-.projects .project-card .media img {
-    height: 16rem;
-    border-radius: 0.5rem;
-    transition: all 0.3s ease;
-    width: 100%;
-}
-
+.projects .project-card .media img,
 .projects .project-card .media video {
     height: 16rem;
     border-radius: 0.5rem;
-    transition: all 0.3s ease;
     width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .projects .project-card .media:hover .hover-info {
