@@ -93,7 +93,7 @@ main {
 .categories .dropdown select {
     border: 1px solid #bababe;
     border-radius: 0.4rem;
-    padding: 0.6rem 1rem;
+    padding-block:0.4rem;
 }
 
 .categories .dropdown select:focus {
