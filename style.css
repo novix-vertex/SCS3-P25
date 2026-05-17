@@ -11,6 +11,16 @@ body {
     height: 100%;
 }
 
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
 header {
     width: 100%;
 
@@ -146,6 +156,14 @@ main {
     color: #000;
 }
 
+.projects .project-card .media .icons .ri-bookmark-line:hover {
+    color: #ffa500;
+}
+
+.projects .project-card .media .icons .ri-poker-hearts-line:hover {
+    color: #db2777;
+}
+
 .projects .project-card .options {
     display: flex;
     align-items: center;
@@ -226,6 +244,52 @@ main {
     font-weight: 600;
     font-size: 0.8rem;
 }
+
+.signup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0rem 5rem 0rem;
+}
+
+.signup button {
+    background: #000;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+}
+
+.signup button:hover {
+    background: #3A3546;
+    cursor: pointer;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    padding-block: 1rem;
+    align-items: center;
+}
+
+.carousel-items {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5rem;
+    padding-left:5rem;
+
+    animation: scroll;
+    animation-name: scroll;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.carousel img {
+    height: clamp(4.5vw, 5vh, 8vw);
+}
+
 
 .bottom {
     display: flex;
