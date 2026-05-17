@@ -100,24 +100,33 @@ main {
     object-position: center;
 }
 
+.projects .project-card .media:hover img,
+.projects .project-card .media:hover video {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
 .projects .project-card .media:hover .hover-info {
-    bottom: 0;
+    bottom: 0.2rem;
     cursor: pointer;
+    border-radius: 0;
 }
 
 .projects .project-card .media .hover-info {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(transparent, #00000099);
-    height: 7rem;
+    background: linear-gradient(transparent, #000000);
+
+    height: 40%;
     position: absolute;
-    bottom: -7rem;
+    bottom: -40%;
     width: 100%;
-    padding: 0.5rem 1rem;
+    padding: 2rem;
     color: #fff;
     border-radius: 0.5rem;
 
+    transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .projects .project-card .media h3 {
@@ -131,12 +140,10 @@ main {
 }
 
 .projects .project-card .media .icons i {
-    border-radius: 2rem;
+    border-radius: 50%;
     padding: 1rem;
     background: #fff;
     color: #000;
-    margin: 0rem 0.5rem;
-    font-size: 1.5rem;
 }
 
 .projects .project-card .options {
