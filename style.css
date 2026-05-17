@@ -29,7 +29,7 @@ header {
     align-items: center;
 
     height: 3.8rem;
-    padding: 1.5rem 2.5rem;
+    padding: 3rem 2.3rem;
     background: #fff;
 }
 
@@ -44,7 +44,7 @@ header .header-left {
 }
 
 header .header-left .header-logo img {
-    width: 6rem;
+    width: 6.2rem;
     cursor: pointer;
 }
 
@@ -87,6 +87,114 @@ header .header-right .login-link {
 main {
     background: #fff;
     padding: 0.2rem 1rem;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.hero h1,
+h3 {
+    color: #000;
+}
+
+.hero h1 {
+    font-size: 4.25rem;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.hero h3 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.hero .input-search-box {
+    background-color: #f3f3f6;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.4rem;
+    width: 50vw;
+}
+
+.hero .input-search-box input {
+    background: transparent;
+    border: none;
+    width: 100%;
+    color: black;
+    outline: none;
+    color: #1a1a1a;
+
+}
+
+.hero .input-search-box input::placeholder {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #a1a1aa;
+}
+
+
+
+.hero .input-search-box span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    padding-right: 10px;
+}
+
+.hero .input-search-box span i {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.hero .input-search-box .search {
+    background: #EC5E95;
+    border-radius: 50%;
+    padding: 0.7rem;
+    color: #fff;
+    font-size: 18px;
+}
+
+.hero .tags {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.hero .tags h4 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #a1a1aa;
+}
+
+.hero .tags h5 {
+    font-weight: 400;
+    border-radius: 3rem;
+    padding: 0.25rem 1rem;
+    font-size: 1rem;
+    background-color: #f3f3f6;
+    cursor: pointer;
+    color: #000;
+}
+
+.hero .tags h5:hover {
+    background: none;
 }
 
 .categories {
