@@ -595,9 +595,10 @@ footer h5 {
 }
 
 @media (max-width: 1200px) {
-     .hero .input-search-box {
-        width:70vw;
+    .hero .input-search-box {
+        width: 70vw;
     }
+
     .categories .dropdown {
         grid-area: dropdown;
     }
@@ -628,6 +629,13 @@ footer h5 {
 }
 
 @media (max-width: 1024px) {
+    header .header-left {
+        justify-content: space-around;
+    }
+
+    header .header-left nav {
+        gap: 1.2rem;
+    }
 
     footer,
     .bottom,
@@ -672,6 +680,10 @@ footer h5 {
 }
 
 @media (max-width: 768px) {
+
+    header .header-left nav {
+        display: none;
+    }
 
     footer,
     .bottom,
