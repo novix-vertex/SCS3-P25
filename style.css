@@ -527,7 +527,7 @@ main {
 
     animation: scroll;
     animation-name: scroll;
-    animation-duration: 20s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
