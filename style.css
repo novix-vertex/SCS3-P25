@@ -119,24 +119,35 @@ h3 {
 }
 
 .hero .input-search-box {
-    background-color: #f3f3f6;
-    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    /* background-color: #f3f3f6; */
+    /* padding: 0.5rem 0.5rem 0.5rem 1rem; */
     border-radius: 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 0.4rem;
+    /* gap: 0.4rem; */
     width: 50vw;
 }
 
 .hero .input-search-box input {
-    background: transparent;
+    /* background: transparent; */
+    background-color: #f3f3f6;
     border: none;
     width: 100%;
-    color: black;
     outline: none;
     color: #1a1a1a;
+    padding: 1rem;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    cursor: pointer;
+}
 
+.hero .input-search-box input:hover {
+    background: transparent;
+}
+
+.hero .input-search-box:has(input:hover) .buttons {
+    background: transparent;
 }
 
 .hero .input-search-box input::placeholder {
@@ -145,9 +156,28 @@ h3 {
     color: #a1a1aa;
 }
 
+.hero .input-search-box .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f3f6;
+    padding-inline: 0.5rem;
+    padding-block: 0.45rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    cursor: pointer;
+}
 
+.hero .input-search-box .buttons:hover {
+    background: transparent;
+}
 
-.hero .input-search-box span {
+.hero .input-search-box:has(.buttons:hover) input {
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.hero .input-search-box .buttons span {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -157,15 +187,15 @@ h3 {
     padding-right: 10px;
 }
 
-.hero .input-search-box span i {
+.hero .input-search-box .buttons span i {
     font-size: 18px;
     font-weight: 600;
 }
 
-.hero .input-search-box .search {
+.hero .input-search-box .buttons .search {
     background: #EC5E95;
     border-radius: 50%;
-    padding: 0.7rem;
+    padding: 0.5rem;
     color: #fff;
     font-size: 18px;
 }
@@ -201,7 +231,9 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-block: 3rem;
+    padding-block: 3rem;
+    padding-inline: 2.3rem;
+
 }
 
 .categories .dropdown select {
@@ -275,6 +307,7 @@ h3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2rem;
+    padding-inline: 2.3rem;
 }
 
 .projects .project-card {
@@ -436,7 +469,7 @@ h3 {
 .signup {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 3rem 0rem 5rem 0rem;
 }
 
@@ -450,6 +483,15 @@ h3 {
 
 .signup button:hover {
     background: #3A3546;
+    cursor: pointer;
+}
+
+.signup i {
+    background: #A1A1AA;
+    border-radius: 50%;
+    padding: 12px;
+    color: #fff;
+    font-size: 25px;
     cursor: pointer;
 }
 
@@ -469,13 +511,13 @@ h3 {
 
     animation: scroll;
     animation-name: scroll;
-    animation-duration: 10s;
+    animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
 .carousel img {
-    height: clamp(4.5vw, 5vh, 8vw);
+    height: clamp(4vw, 5vh, 8vw);
 }
 
 
